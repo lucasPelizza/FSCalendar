@@ -378,6 +378,11 @@ IB_DESIGNABLE
 @property (assign, nonatomic) IBInspectable CGFloat rowHeight;
 
 /**
+ The row height for the week view of the calendar if paging enabled is NO.;
+ */
+@property (assign, nonatomic) IBInspectable CGFloat weekRowHeight;
+
+/**
  The calendar appearance used to control the global fonts、colors .etc
  */
 @property (readonly, nonatomic) FSCalendarAppearance *appearance;

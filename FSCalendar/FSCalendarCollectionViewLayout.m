@@ -133,7 +133,18 @@
                         break;
                 }
             } else {
-                height = self.calendar.rowHeight;
+                switch (self.calendar.scope) {
+                    case FSCalendarScopeMonth: {
+                        height = self.calendar.rowHeight;
+                        break;
+                    }
+                    case FSCalendarScopeWeek: {
+                        height = self.calendar.weekRowHeight;
+                        break;
+                    }
+                    default:
+                        break;
+                }
             }
             height;
         });
